@@ -8,15 +8,24 @@
 MobSF传送门:https://github.com/MobSF/Mobile-Security-Framework-MobSF
 
 ### 使用方式
-apk安卓包丢到MobSF扫描分析后，通过此次扫描的hash值查询
+1.修改脚本中下面注释的两个地方适配自己的环境
 ```
-python3 app_permissions.py <MobSF api key> <扫描结果hash>
+def get_json(hash):
+    url = 'http://192.168.2.162:8000/api/v1/report_json'  # 改为MobSF的地址
+    headers = {'Authorization': 80522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2054169d3deb}  # 改为MobSF的key
+    data = {'hash': hash}
+    r = requests.post(url, headers=headers, data=data)
+    return r.json()
+```
+2.apk安卓包丢到MobSF扫描分析后，通过此次扫描的hash值查询
+```
+python3 app_permissions.py <扫描结果hash>
 ```
 
 ### 示例
 运行
 ```
-python3 app_permissions.py 02880522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2054169d3deb 9e8efe63a8119a5108d2f6ea53841de4
+python3 app_permissions.py 9e8efe63a8119a5108d2f6ea53841de4
 ```
 输出
 ```
