@@ -5,7 +5,10 @@
 
 内置权限对应中文描述的字典，如字典无该条目则采用MobSF英文描述（欢迎补充或纠错）
 
+MobSF传送门:https://github.com/MobSF/Mobile-Security-Framework-MobSF
+
 ### 使用方式
+apk安卓包丢到MobSF扫描分析后，通过此次扫描的hash值查询
 ```
 python3 app_permissions.py <MobSF api key> <扫描结果hash>
 ```
@@ -17,7 +20,7 @@ python3 app_permissions.py 02880522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2
 ```
 输出
 ```
-测试应用2.0.2应用权限:
+某应用2.0.2应用权限:
 1.android.permission.RECEIVE_USER_PRESENT:允许程序唤醒设备
 2.android.permission.INTERNET:完全互联网访问
 3.android.permission.WAKE_LOCK:阻止设备进入休眠状态
