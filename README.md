@@ -1,1 +1,38 @@
 # app_permissions
+
+## 简介
+基于MobSF工具api获取安卓app权限的工具，用于app合规检查工作
+
+## 特点
+内置安卓权限对应中文描述的字典，如字典无该条目则采用MobSF内英文描述
+
+## 使用方式
+python3 app_permissions.py <MobSF的api key> <扫描结果的hash>
+
+## 示例
+### 运行
+'''
+python3 app_permissions.py 02880522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2054169d3deb 9e8efe63a8119a5108d2f6ea53841de4
+'''
+### 输出
+'''
+测试应用2.0.2应用权限:
+1.android.permission.RECEIVE_USER_PRESENT:允许程序唤醒设备
+2.android.permission.INTERNET:完全互联网访问
+3.android.permission.WAKE_LOCK:阻止设备进入休眠状态
+4.android.permission.WRITE_EXTERNAL_STORAGE:读取/修改/删除外部存储内容
+5.android.permission.READ_EXTERNAL_STORAGE:测试对受保护存储空间的访问权限
+6.android.permission.VIBRATE:控制振动
+7.android.permission.ACCESS_NETWORK_STATE:获取网络状态
+8.android.permission.ACCESS_WIFI_STATE:获取WiFi状态
+9.android.permission.CHANGE_NETWORK_STATE:改变网络状态
+10.android.permission.CAMERA:拍照和录像
+11.android.permission.RECEIVE_BOOT_COMPLETED:开机自动启动
+12.android.permission.CHANGE_NETWORK_SATET:Unknown permission from android reference
+13.android.permission.READ_SETTINGS:Unknown permission from android reference
+14.android.permission.MODIFY_AUDIO_SETTINGS:修改声音设置
+15.android.permission.BROADCAST_STICKY:连续广播
+16.android.permission.SCHEDULE_EXACT_ALARM:允许应用使用精确的警报
+17.getui.permission.GetuiService.com.juchaozhi:Unknown permission from android reference
+18.com.vivo.notification.permission.BADGE_ICON:Unknown permission from android reference
+'''
