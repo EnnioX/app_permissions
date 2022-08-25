@@ -151,9 +151,9 @@ permissions_dict = {
 
 
 # 根据hash获得扫描结果json
-def get_json(key, hash):
-    url = 'http://192.168.244.162:8000/api/v1/report_json'
-    headers = {'Authorization': key}
+def get_json(hash):
+    url = 'http://192.168.2.162:8000/api/v1/report_json'  # 改为MobSF的地址
+    headers = {'Authorization': 80522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2054169d3deb}  # 改为MobSF的key
     data = {'hash': hash}
     r = requests.post(url, headers=headers, data=data)
     return r.json()
@@ -176,9 +176,8 @@ def get_permissions(json):
 
 
 def main():
-    key = sys.argv[1]
-    hash = sys.argv[2]
-    get_permissions(get_json(key, hash))
+    hash = sys.argv[1]
+    get_permissions(get_json(hash))
     
 
 if __name__ == '__main__':
