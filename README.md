@@ -11,11 +11,11 @@ python3 app_permissions.py <MobSF的api key> <扫描结果的hash>
 
 ## 示例
 ### 运行
-'''
+```
 python3 app_permissions.py 02880522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2054169d3deb 9e8efe63a8119a5108d2f6ea53841de4
-'''
+```
 ### 输出
-'''
+```
 测试应用2.0.2应用权限:
 1.android.permission.RECEIVE_USER_PRESENT:允许程序唤醒设备
 2.android.permission.INTERNET:完全互联网访问
@@ -35,4 +35,4 @@ python3 app_permissions.py 02880522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2
 16.android.permission.SCHEDULE_EXACT_ALARM:允许应用使用精确的警报
 17.getui.permission.GetuiService.com.juchaozhi:Unknown permission from android reference
 18.com.vivo.notification.permission.BADGE_ICON:Unknown permission from android reference
-'''
+```
