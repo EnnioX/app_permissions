@@ -1,20 +1,21 @@
 # app_permissions
 
-## 简介
-基于MobSF工具api获取安卓app权限的工具，用于app合规检查工作
+### 简介
+基于MobSF API测试安卓app权限的工具，用于app合规检查，查看敏感权限是否在隐私政策中说明
 
-## 特点
-内置安卓权限对应中文描述的字典，如字典无该条目则采用MobSF内英文描述
+内置权限对应中文描述的字典，如字典无该条目则采用MobSF英文描述（欢迎补充或纠错）
 
-## 使用方式
-python3 app_permissions.py <MobSF的api key> <扫描结果的hash>
+### 使用方式
+```
+python3 app_permissions.py <MobSF api key> <扫描结果hash>
+```
 
-## 示例
-### 运行
+### 示例
+运行
 ```
 python3 app_permissions.py 02880522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2054169d3deb 9e8efe63a8119a5108d2f6ea53841de4
 ```
-### 输出
+输出
 ```
 测试应用2.0.2应用权限:
 1.android.permission.RECEIVE_USER_PRESENT:允许程序唤醒设备
