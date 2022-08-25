@@ -32,11 +32,7 @@ python3 app_permissions.py 02880522857f4ae4943a55b6f960d375fb6655487f24e9ffd0de2
 9.android.permission.CHANGE_NETWORK_STATE:改变网络状态
 10.android.permission.CAMERA:拍照和录像
 11.android.permission.RECEIVE_BOOT_COMPLETED:开机自动启动
-12.android.permission.CHANGE_NETWORK_SATET:Unknown permission from android reference
-13.android.permission.READ_SETTINGS:Unknown permission from android reference
 14.android.permission.MODIFY_AUDIO_SETTINGS:修改声音设置
 15.android.permission.BROADCAST_STICKY:连续广播
 16.android.permission.SCHEDULE_EXACT_ALARM:允许应用使用精确的警报
-17.getui.permission.GetuiService.com.juchaozhi:Unknown permission from android reference
-18.com.vivo.notification.permission.BADGE_ICON:Unknown permission from android reference
 ```
