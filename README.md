@@ -3,7 +3,7 @@
 ### 简介
 基于MobSF API测试安卓app权限的工具，用于app合规检查，查看敏感权限是否在隐私政策中说明
 
-内置权限对应中文描述的字典，如字典无该条目则采用MobSF英文描述（欢迎补充或纠错）
+内置权限对应中文描述的字典，如字典无该条目则采用MobSF英文描述
 
 MobSF传送门:https://github.com/MobSF/Mobile-Security-Framework-MobSF
 
